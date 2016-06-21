@@ -1,0 +1,12 @@
+C:\Users\Licen\Desktop\webSupervisor\Supervisor\Supervisor\obj\Debug\Supervisor.csprojResolveAssemblyReference.cache
+C:\Users\Licen\Desktop\webSupervisor\Supervisor\Supervisor\bin\Supervisor.dll.config
+C:\Users\Licen\Desktop\webSupervisor\Supervisor\Supervisor\bin\Supervisor.dll
+C:\Users\Licen\Desktop\webSupervisor\Supervisor\Supervisor\bin\Supervisor.pdb
+C:\Users\Licen\Desktop\webSupervisor\Supervisor\Supervisor\bin\Datos.dll
+C:\Users\Licen\Desktop\webSupervisor\Supervisor\Supervisor\bin\Logica.dll
+C:\Users\Licen\Desktop\webSupervisor\Supervisor\Supervisor\bin\Datos.pdb
+C:\Users\Licen\Desktop\webSupervisor\Supervisor\Supervisor\bin\Logica.pdb
+C:\Users\Licen\Desktop\webSupervisor\Supervisor\Supervisor\obj\Debug\Supervisor.dll
+C:\Users\Licen\Desktop\webSupervisor\Supervisor\Supervisor\obj\Debug\Supervisor.pdb
+C:\Users\Licen\Desktop\webSupervisor\Supervisor\Supervisor\bin\mercadopago.dll
+C:\Users\Licen\Desktop\webSupervisor\Supervisor\Supervisor\bin\Newtonsoft.Json.dll

@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{14476571-0ECE-42C3-BFDA-641A2CCCD5B5}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Supervisor</RootNamespace>
+    <AssemblyName>Supervisor</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mercadopago">
+      <HintPath>..\..\..\mercadopago.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1-administrador.aspx" />
+    <Content Include="1-categoria.aspx" />
+    <Content Include="1-comprasEjercicios.aspx" />
+    <Content Include="1-ejerciciosInsertar.aspx" />
+    <Content Include="1-empresas.aspx" />
+    <Content Include="1-explicacionPedida.aspx" />
+    <Content Include="1-tarjetaPrepaga.aspx" />
+    <Content Include="1-usuario.aspx" />
+    <Content Include="2-cargaAutomatica.aspx" />
+    <Content Include="2-comprasVideos.aspx" />
+    <Content Include="2-consultaAdministrador.aspx" />
+    <Content Include="2-ejercicioPedido.aspx" />
+    <Content Include="2-ejerciciosActualizar.aspx" />
+    <Content Include="2-mensajeUsuario.aspx" />
+    <Content Include="2-precios.aspx" />
+    <Content Include="3-cargaManual.aspx" />
+    <Content Include="3-controlIngreso.aspx" />
+    <Content Include="3-ofertas.aspx" />
+    <Content Include="4-Facturacion.aspx" />
+    <Content Include="4-valorOfertas.aspx" />
+    <Content Include="5-movimientos.aspx" />
+    <Content Include="index.aspx" />
+    <Content Include="paginaMaestra.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="1-administrador.aspx.cs">
+      <DependentUpon>1-administrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="1-administrador.aspx.designer.cs">
+      <DependentUpon>1-administrador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="1-categoria.aspx.cs">
+      <DependentUpon>1-categoria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="1-categoria.aspx.designer.cs">
+      <DependentUpon>1-categoria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="1-comprasEjercicios.aspx.cs">
+      <DependentUpon>1-comprasEjercicios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="1-comprasEjercicios.aspx.designer.cs">
+      <DependentUpon>1-comprasEjercicios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="1-ejerciciosInsertar.aspx.cs">
+      <DependentUpon>1-ejerciciosInsertar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="1-ejerciciosInsertar.aspx.designer.cs">
+      <DependentUpon>1-ejerciciosInsertar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="1-empresas.aspx.cs">
+      <DependentUpon>1-empresas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="1-empresas.aspx.designer.cs">
+      <DependentUpon>1-empresas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="1-explicacionPedida.aspx.cs">
+      <DependentUpon>1-explicacionPedida.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="1-explicacionPedida.aspx.designer.cs">
+      <DependentUpon>1-explicacionPedida.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="1-tarjetaPrepaga.aspx.cs">
+      <DependentUpon>1-tarjetaPrepaga.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="1-tarjetaPrepaga.aspx.designer.cs">
+      <DependentUpon>1-tarjetaPrepaga.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="1-usuario.aspx.cs">
+      <DependentUpon>1-usuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="1-usuario.aspx.designer.cs">
+      <DependentUpon>1-usuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="2-cargaAutomatica.aspx.cs">
+      <DependentUpon>2-cargaAutomatica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="2-cargaAutomatica.aspx.designer.cs">
+      <DependentUpon>2-cargaAutomatica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="2-comprasVideos.aspx.cs">
+      <DependentUpon>2-comprasVideos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="2-comprasVideos.aspx.designer.cs">
+      <DependentUpon>2-comprasVideos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="2-consultaAdministrador.aspx.cs">
+      <DependentUpon>2-consultaAdministrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="2-consultaAdministrador.aspx.designer.cs">
+      <DependentUpon>2-consultaAdministrador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="2-ejercicioPedido.aspx.cs">
+      <DependentUpon>2-ejercicioPedido.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="2-ejercicioPedido.aspx.designer.cs">
+      <DependentUpon>2-ejercicioPedido.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="2-ejerciciosActualizar.aspx.cs">
+      <DependentUpon>2-ejerciciosActualizar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="2-ejerciciosActualizar.aspx.designer.cs">
+      <DependentUpon>2-ejerciciosActualizar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="2-mensajeUsuario.aspx.cs">
+      <DependentUpon>2-mensajeUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="2-mensajeUsuario.aspx.designer.cs">
+      <DependentUpon>2-mensajeUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="2-precios.aspx.cs">
+      <DependentUpon>2-precios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="2-precios.aspx.designer.cs">
+      <DependentUpon>2-precios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3-cargaManual.aspx.cs">
+      <DependentUpon>3-cargaManual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="3-cargaManual.aspx.designer.cs">
+      <DependentUpon>3-cargaManual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3-controlIngreso.aspx.cs">
+      <DependentUpon>3-controlIngreso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="3-controlIngreso.aspx.designer.cs">
+      <DependentUpon>3-controlIngreso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="3-ofertas.aspx.cs">
+      <DependentUpon>3-ofertas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="3-ofertas.aspx.designer.cs">
+      <DependentUpon>3-ofertas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="4-Facturacion.aspx.cs">
+      <DependentUpon>4-Facturacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="4-Facturacion.aspx.designer.cs">
+      <DependentUpon>4-Facturacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="4-valorOfertas.aspx.cs">
+      <DependentUpon>4-valorOfertas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="4-valorOfertas.aspx.designer.cs">
+      <DependentUpon>4-valorOfertas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="5-movimientos.aspx.cs">
+      <DependentUpon>5-movimientos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="5-movimientos.aspx.designer.cs">
+      <DependentUpon>5-movimientos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paginaMaestra.aspx.cs">
+      <DependentUpon>paginaMaestra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paginaMaestra.aspx.designer.cs">
+      <DependentUpon>paginaMaestra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Datos\Datos.csproj">
+      <Project>{a0c29aa6-d93e-46cf-9899-605c0f7f04f6}</Project>
+      <Name>Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logica\Logica.csproj">
+      <Project>{bc2b3d8e-2341-4bcb-8947-eec859cb5761}</Project>
+      <Name>Logica</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ejercicios\" />
+    <Folder Include="xml\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>25201</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:24976/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
